@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Your Favourtie Animal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)] = "myFavAnimal">
+    <ion-item>
+      <ion-label>Horse</ion-label>
+      <ion-radio value = "Horse"></ion-radio>
+      </ion-item>
+
+  <ion-item>
+    <ion-label>Cow</ion-label>
+    <ion-radio value = "Cow"></ion-radio>
+    </ion-item>
+
+  <ion-item>
+      <ion-label>Chicken</ion-label>
+      <ion-radio value = "Chicken"></ion-radio>
+      </ion-item>
+      </ion-list>
+
+  
+  <button ion-button (click) = "saveFavAnimal()" >Save</button> 
+  
+
+
+</ion-content>
+
