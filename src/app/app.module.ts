@@ -16,10 +16,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AnimalsPage } from '../pages/animals/animals';
 import { CropsPage } from '../pages/crops/crops';
 import { MachineryPage } from '../pages/machinery/machinery';
-import { WeatherPage} from '../pages/weather/weather';
+import { MoviePage} from '../pages/movie/movie';
 import {FlashlightPage} from '../pages/flashlight/flashlight';
 
-import { WeatherProvider } from '../providers/weather/weather';
+import { MovieProvider } from '../providers/movie/movie';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { WeatherProvider } from '../providers/weather/weather';
     AnimalsPage,
     CropsPage,
     MachineryPage,
-    WeatherPage,
+    MoviePage,
     FlashlightPage
   ],
   imports: [
@@ -52,14 +52,14 @@ import { WeatherProvider } from '../providers/weather/weather';
     AnimalsPage,
     CropsPage,
     MachineryPage,
-    WeatherPage,
+    MoviePage,
     FlashlightPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WeatherProvider,
+    MovieProvider,
     Flashlight
   ]
 })

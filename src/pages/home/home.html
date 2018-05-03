@@ -1,27 +1,45 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color ="primary">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<h1>FARM INFO </h1>
+  <br>
+  <ion-row center>  
+      <ion-col text-center>   
+         <h1> Agri Spec</h1>
+      </ion-col> 
+     </ion-row>
 
-<ol>
-  <button (click)="openAnimal()"ion-button full>Animals</button>
-</ol>
-  <ol>
-    <button (click)="openCrops()"ion-button full>Crops</button>
-  </ol>
-  <ol>
-      <button (click)="openMachinery()"ion-button full>Machinery</button>
-    </ol>
-      <ol>
-        <button (click)="openWeather()"ion-button full>Weather</button>
-      </ol>
-      <ol>
-          <button (click)="openFlashlight()"ion-button full>Flashlight</button>
-        </ol>
-  
 
+<ion-row center>  
+    <ion-col text-center>   
+        <button (click)="openAnimal()"ion-button full round>Animals</button>
+    </ion-col> 
+   </ion-row>
+
+   <ion-row center>  
+      <ion-col text-center>   
+          <button (click)="openCrops()"ion-button full round>Crops</button>
+      </ion-col> 
+     </ion-row>
+
+     <ion-row center>  
+        <ion-col text-center>   
+            <button (click)="openMachinery()"ion-button full round>Machinery</button>
+        </ion-col> 
+       </ion-row>
+     
+       <ion-row center>  
+          <ion-col text-center>   
+              <button (click)="openMovie()"ion-button full round>Farm Movies</button>
+          </ion-col> 
+         </ion-row>
+
+         <ion-row center>  
+            <ion-col text-center>   
+                <button (click)="openFlashlight()"ion-button full round>Flashlight</button>
+            </ion-col> 
+           </ion-row>
 </ion-content>

@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';   
+import { Observable } from 'rxjs';  
+
+
 /*
   Generated class for the WeatherProvider provider.
 
@@ -8,14 +10,12 @@ import { Observable } from 'rxjs';
   and Angular DI.
 */
 @Injectable()
-export class WeatherProvider {
+export class MovieProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello WeatherProvider Provider');
+    console.log('Hello MovieProvider Provider');
   }
 
-  getWeather(): Observable<any>{
-    return this.http.get("http://api.apixu.com/v1/current.json?key=d8a478ba49ac46fab21173454183004&q=Dublin")
-   
-  }
-    }
+  getMovieData(): Observable<any>{
+    return this.http.get("http://www.omdbapi.com/?i=tt3896198&apikey=733a22c6&s=farm");
+  }    }

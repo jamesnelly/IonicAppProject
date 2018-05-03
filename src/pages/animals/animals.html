@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color ="danger">
     <ion-title> Animals Section</ion-title>
   </ion-navbar>
 
@@ -16,37 +16,50 @@
   <ion-img width="200" height="200" src="https://mediadcom.decathlon.com/media//catalog/product/resized/horse-riding-drying-rug-for-horse-or-pony-en-s9285-model01-PRODUCT-25231955.jpg"><br></ion-img>
   <br>
   <br>
-  <h1>Horse</h1>
-  <h5>Lifespan 25-30 years</h5>
-  <h5>Speed 40-48 km/h</h5>
-  <h5>Mass 380-1,000 kg</h5>
-  <h5>Gestation period 11-12 months</h5>
-  <br>
+  <ion-row center>  
+      <ion-col text-center>   
+          <h1>Horse</h1>
+          <h5>Lifespan 25-30 years</h5>
+          <h5>Speed 40-48 km/h</h5>
+          <h5>Mass 380-1,000 kg</h5>
+          <h5>Gestation period 11-12 months</h5>
+          <br>
+      </ion-col> 
+     </ion-row>
   <ion-img width="200" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJEmrsvEM0xuqGO6KOmLbeaCKCGFMB6VSrvKdMFiwfLyg-O1hVA"><br></ion-img>
   <br>
   <br>
-  <h1>Cow</h1>
-  <h5>Lifespan 18-22 years</h5>
-  <h5>Speed 40-48 km/h</h5>
-  <h5>Mass Male: 1,100kg</h5>
-  <h5>Mass female: 750 kg</h5>  
-  <h5>Gestation period 283 days</h5>
-  <br>
+  <ion-row center>  
+      <ion-col text-center>   
+          <h1>Cow</h1>
+          <h5>Lifespan 18-22 years</h5>
+          <h5>Speed 40-48 km/h</h5>
+          <h5>Mass Male: 1,100kg</h5>
+          <h5>Mass female: 750 kg</h5>  
+          <h5>Gestation period 283 days</h5>
+          <br>
+      </ion-col> 
+     </ion-row>
+  
   <ion-img width="200" height="200" src="https://5.imimg.com/data5/PU/SM/MY-13659451/poultry-farm-chicken-500x500.jpg"><br></ion-img>
   <br>
   <br>
-  <h1>Chicken</h1>
+  <ion-row center>  
+      <ion-col text-center>   
+          <h1>Chicken</h1>
   <h5>Lifespan: 7-8 years</h5>
   <h5>Mass: 700 g</h5>
   <h5>20 Billion in the world</h5>
   <h5>The Gender of a chicken is based off the colour of the egg</h5>
   <br>
+      </ion-col> 
+     </ion-row>
   
- 
-  <br>
-  <ion-title>Your Favourite Animal: {{FavAnimal}}</ion-title>
-  <button ion-button (click) = openFavAnimalPage() >Update Your Favourtite Animal</button> 
-
-
-  
+     <ion-row center>  
+        <ion-col text-center>   
+            <br>
+            <ion-title>Your Favourite Animal: {{FavAnimal}}</ion-title>
+            <button ion-button (click) = openFavAnimalPage() >Update Your Favourtite Animal</button> 
+        </ion-col> 
+       </ion-row>
 </ion-content>

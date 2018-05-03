@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { AnimalsPage } from'./../animals/animals'; 
 import { CropsPage } from'./../crops/crops';
 import { MachineryPage } from'./../machinery/machinery';
-import { WeatherPage } from '../weather/weather';
+import { MoviePage } from '../movie/movie';
 import {FlashlightPage} from '../flashlight/flashlight';
 
 
@@ -14,27 +14,20 @@ import {FlashlightPage} from '../flashlight/flashlight';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
   }
-
   openAnimal() {
     this.navCtrl.push(AnimalsPage);
     }
-
     openCrops() {
       this.navCtrl.push(CropsPage);
       }
-
       openMachinery() {
         this.navCtrl.push(MachineryPage);
         }
-          openWeather() {
-            this.navCtrl.push(WeatherPage);
+          openMovie() {
+            this.navCtrl.push(MoviePage);
             }
             openFlashlight() {
               this.navCtrl.push(FlashlightPage);
               }
-    
-  
-
 }
